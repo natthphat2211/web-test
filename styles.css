@@ -1,0 +1,68 @@
+/* Mobile First Design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #2b5d3d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: white;
+  background-color: #3a7f52;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+.content h2 {
+  color: #2b5d3d;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background-color: #2b5d3d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+  nav .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav .menu li a {
+    margin: 0 0.5rem;
+    width: auto;
+  }
+}
